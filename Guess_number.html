@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="css/Guess_number.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+
+        <div id="player1-section" class="game-section">
+            <h2>Player 1: Set the Secret Number</h2>
+            <input type="number" id="player1-secret-input" min="1" max="10" placeholder="Enter a number (1-10)">
+            <button id="set-secret-btn">Set Number</button>
+            <p id="player1-error" class="error-message"></p>
+        </div>
+
+        <div id="guess-section" class="game-section hidden">
+            <h2 id="current-player-display">Player 2: Guess the Number</h2>
+            <input type="number" id="guess-input" min="1" max="10" placeholder="Enter your guess">
+            <button id="submit-guess-btn">Guess</button>
+            <p id="message"></p>
+            <p>Attempts left: <span id="attempts-left">5</span></p>
+        </div>
+
+        <div id="result-section" class="game-section hidden">
+            <h2 id="game-result"></h2>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="js/Guess_number.js"></script>
+</body>
+</html>
